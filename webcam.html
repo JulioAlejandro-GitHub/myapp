@@ -1,0 +1,53 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>FaceApi</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+video {
+    position: absolute;
+    z-index: 1;
+}
+canvas {
+    position: relative;
+    z-index: 20;
+}
+img{
+    position: relative;
+    z-index: 20;
+}
+        </style>
+        <script src="./public/js/face-api.min.js" type="module"></script>
+        <script src="./public/js/jquery-3.7.1.min.js" type="text/javascript"></script>
+        <script src="./public/js/ajax.js" type="module"></script>
+
+    </head>
+    <body>
+        <div style="position: relative;">
+            <video onloadedmetadata="onStart(this)" id="inputVideo1"
+            autoplay muted playsinline></video>
+            <canvas id="overlay1"></canvas>
+        </div>
+
+        <div id="download">
+            <div id="previewImage"></div>
+        </div>
+        <div id="imageDIV"></div>
+        
+
+        
+            <img src="" id="outputImage" style="display:block"/>
+            <canvas id="outputImage_c"></canvas>
+        
+            <span id="resultado">0</span>
+        
+        <script src="./public/js/script_webcam.js"></script>
+        
+    </body>
+</html>

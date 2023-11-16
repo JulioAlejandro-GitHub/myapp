@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="./public/js/face-api.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="./public/js/jquery.facedetection.js"></script>
+  
+  <script defer src="./public/js/capture.js"></script>
+  <style>
+    #container {
+      margin: 0;
+      padding: 0;
+      width: 500px;
+      height: 375px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      position: absolute;
+    }
+
+    #box {
+      width: 239px;
+      height: 306px;
+      position: absolute;
+      /*background-image: url("paper.png");
+      background-repeat: no-repeat;
+      /*background-size: 450px 325px;*/
+    }
+  </style>
+</head>
+<body>
+  <div>
+  <div id="container">
+  <div id="box"></div>
+  <video id="video" width="500" height="375" autoplay muted></video>
+  </div>
+  <button type="button" id="button" disabled>Click to take picture</button>
+  </div>
+  <div id="screenshot">
+  </div>  
+</body>
+</html>

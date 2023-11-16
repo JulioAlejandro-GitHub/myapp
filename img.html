@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>FaceApi</title>
+        <style>
+
+
+
+.outsideWrapper{ 
+    width:900px; height:900px; 
+    margin:20px 60px; 
+    border:1px solid blue;}
+.insideWrapper{ 
+    width:100%; height:100%; 
+    position:relative;}
+.coveredImage{ 
+    width:100%; height:100%; 
+    position:absolute; top:0px; left:0px;
+}
+.coveringCanvas{ 
+    width:100%; height:100%; 
+    position:absolute; top:0px; left:0px;
+    background-color: rgba(255,0,0,.1);
+}
+        </style>
+        <script src="./public/js/face-api.min.js" type="module"></script>
+    </head>
+    <body cz-shortcut-listen="true">
+        <!--
+
+        
+        <div id="container">
+            <img src="./public/images/img1.webp" id="image">
+            <canvas id="canvas"></canvas>
+        </div>
+        <script src="./public/js/script.js" type="module"></script>
+-->
+
+        <div class="outsideWrapper">
+            <div class="insideWrapper">
+                <img id="image" src="./public/images/img1.webp" class="coveredImage">
+                <canvas id="canvas" class="coveringCanvas"></canvas>
+            </div>
+        </div>
+        <script src="./public/js/script_img.js" type="module"></script>
+        
+    </body>
+</html>
